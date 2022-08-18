@@ -84,13 +84,35 @@ function renderLeftNodeList(defaultCounty){
 
    for(let i =0;i<array.length;i++){
 
-      if(array[i].properties.county===defaultCounty){
-         str+='<li>'+array[i].properties.name+ '</li>' +array[i].properties.mask_child ;
-      }      
+      if(array[i].properties.county === defaultCounty){
+         str+=
+         '<div class="sideBarbox">'+
+            '<div class ="sideBarContentBox">'+ 
+               '<strong>'+array[i].properties.name+ '</strong>' +  
+                  '<div>'+ 
+                     '<span>'+  array[i].properties.address + '</span>' +
+                     '<span>'+  array[i].properties.phone + '</span>' +
+                  '</div>'              
+            +'</div>' + 
+                    
+            '<div class="sideBarContentBoxTitleCount">'+              
+               '<span class="sideBaradultmask">'+array[i].properties.mask_adult +  '</span>' + 
+               '<span class="sideBarchildmask">'+array[i].properties.mask_child +  '</span>' +           
+            '</div>' + 
+         '</div>' ; 
+      } 
    }
+   
    document.querySelector('.list').innerHTML = str;
 }
 
 document.querySelector('.area').addEventListener('change',function(e){   
    renderLeftNodeList(e.target.value);
 });
+
+// var map = L.map('map').setView([51.505, -0.09], 13);
+
+// L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+//     maxZoom: 19,
+//     attribution: '© OpenStreetMap'
+// }).addTo(map);

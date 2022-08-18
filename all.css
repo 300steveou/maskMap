@@ -4,5 +4,104 @@
 }
 
 .title{
-    color: red;
+    /* Layout Properties */
+top: 83px;
+left: 216px;
+width: 87px;
+height: 38px;
+/* UI Properties */
+text-align: left;
+font: normal normal normal 29px/38px Segoe UI;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
 }
+ 
+.titleBlock{
+    /* Layout Properties */
+top: 75px;
+left: 206px;
+width: 254px;
+height: 92px;
+/* UI Properties */
+background: #73C0D8 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.queryInput{
+    /* Layout Properties */
+top: 127px;
+left: 216px;
+width: 240px;
+height: 31px;
+/* UI Properties */
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 20px;
+opacity: 1;
+}
+
+.body{
+/* Layout Properties */
+top: 75px;
+left: 206px;
+width: 254px;
+height: 92px;
+/* UI Properties */
+background: #73C0D8 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+
+.sideBaradultmask{
+  /* Layout Properties */
+top: 263px;
+left: 218px;
+width: 112px;
+height: 25px;
+/* UI Properties */
+background: #73C0D8 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+.sideBarchildmask{
+   /* Layout Properties */
+top: 263px;
+left: 340px;
+width: 112px;
+height: 25px;
+/* UI Properties */
+background: #FFA573 0% 0% no-repeat padding-box;
+border-radius: 16px;
+opacity: 1;
+
+}
+
+.sideBarContentBox {
+    padding: 1rem;
+    border-bottom: 2px solid #D9D9D9;
+    cursor: pointer;
+  }
+
+   
+  .sideBaradultmask {
+    background-color: #73C0D8;
+  }
+
+  .sideBarchildmask {
+    background-color: #FFA573;
+  }
+
+  .sideBarContentBoxTitleCount {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    width: 100%;
+  }
